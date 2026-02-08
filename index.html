@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centuryboy's Hub — Premium Audio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+
+  <header class="header">
+    <nav class="nav-bar">
+      <a href="#" class="logo">
+        <span class="logo-text"><span class="logo-primary">CENTURYBOY'S</span> <span
+            class="logo-secondary">HUB</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#products" class="nav-link">PRODUCTS</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </div>
+      <button type="button" class="cart-trigger" aria-label="Open cart" title="Cart">
+        <span class="cart-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+        </span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2 class="cart-title">CART</h2>
+        <button type="button" class="cart-close" aria-label="Close cart">&times;</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <p class="cart-total">Total: <strong id="cart-total">GHS 0</strong></p>
+        <a href="#" class="btn btn-primary cart-checkout" id="cart-checkout" target="_blank" rel="noopener">Checkout via
+          WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <section id="home" class="hero">
+      <h1 class="hero-title">
+        <span class="hero-title-primary">CENTURYBOY'S</span>
+        <span class="hero-title-secondary">HUB</span>
+      </h1>
+      <p class="hero-desc">Low Prices. High Authenticity. Smart pricing, verified quality, zero hype.</p>
+      <p class="hero-desc">Powering Your Digital Life with Quality Gadgets</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">INVENTORY LINEUP</a>
+        <a href="#contact" class="btn btn-secondary">CONTACT US</a>
+      </div>
+    </section>
+
+    <section id="products" class="inventory" aria-label="Inventory products">
+      <div class="inventory-header">
+        <div class="inventory-heading">
+          <span class="inventory-label">INVENTORY</span>
+          <h2 class="inventory-title">PRODUCTS</h2>
+        </div>
+        <p class="inventory-tagline">LIMITED DROP. HAND-PICKED AUTHENTIC DEVICES. VERIFIED PERFORMANCE.</p>
+      </div>
+
+      <nav class="category-tabs" aria-label="Product categories">
+        <button type="button" class="category-tab is-active" data-category="airpods">AIRPODS</button>
+        <button type="button" class="category-tab" data-category="charger">CHARGERS</button>
+        <button type="button" class="category-tab" data-category="playstations">PLAYSTATIONS</button>
+        <button type="button" class="category-tab" data-category="phones">PHONES</button>
+        <button type="button" class="category-tab" data-category="controllers">CONTROLLERS</button>
+        <button type="button" class="category-tab" data-category="videography">VIDEOGRAPHY / PHOTOGRAPHY</button>
+      </nav>
+
+      <div id="category-airpods" class="category-section is-visible">
+        <h3 class="category-title">AIRPODS</h3>
+        <div class="products-grid">
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <span class="product-badge product-badge-golden">PREMIUM</span>
+              <img src="assets/airpods-pro-3.jpg" alt="AirPods Pro 3" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods Pro 3</h3>
+            <p class="product-price">GHS350</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%20Pro%203%20priced%20at%20GHS%20350."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="1">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="assets/photo_2026-02-02_23-25-49.jpg" alt="AirPods Pro 2" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods Pro 2</h3>
+            <p class="product-price">GHS200</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%20Pro%202%20priced%20at%20GHS%20200."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="2">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="assets/airpods3.jpg" alt="AirPods 3" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods 3</h3>
+            <p class="product-price">GHS180</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%203%20priced%20at%20GHS%20180."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="3">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&fit=crop&q=80"
+                alt="AirPods Pro" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods Pro</h3>
+            <p class="product-price">GHS170</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%20Pro%20priced%20at%20GHS%20170."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="4">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <span class="product-badge product-badge-golden">PREMIUM</span>
+              <img src="assets/airpods4.jpg" alt="AirPods 4" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods 4</h3>
+            <p class="product-price">GHS270</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%204%20priced%20at%20GHS%20270."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="5">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="assets/max.webp" alt="AirPods Max" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">AirPods Max</h3>
+            <p class="product-price">GHS1800</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AirPods%20Max%20priced%20at%20GHS%201800."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div id="category-charger" class="category-section">
+        <h3 class="category-title">CHARGERS</h3>
+        <div class="products-grid">
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <img src="assets/iphone charger.jpg" alt="Type-C to Lightning Full Charger" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">Type-C to Lightning Full Charger</h3>
+            <p class="product-price">GHS 90</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20Type-C%20to%20Lightning%20Full%20Charger%20priced%20at%20GHS%2090."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="1">
+            <div class="product-visual">
+              <img src="assets/type c to type c.jpg" alt="Type-C to Type-C Full Charger" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">Type-C to Type-C Full Charger</h3>
+            <p class="product-price">GHS 150</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20Type-C%20to%20Type-C%20Full%20Charger%20priced%20at%20GHS%20150."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="2">
+            <div class="product-visual">
+              <img src="assets/lighning cable.webp" alt="Type-C to Lightning Cable" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">Type-C to Lightning Cable</h3>
+            <p class="product-price">GHS 40</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20Type-C%20to%20Lightning%20Cable%20priced%20at%20GHS%2040."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="3">
+            <div class="product-visual">
+              <img src="assets/type cabel.jpg" alt="Type-C to Type-C Cable" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">Type-C to Type-C Cable</h3>
+            <p class="product-price">GHS 60</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20Type-C%20to%20Type-C%20Cable%20priced%20at%20GHS%2060."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="4">
+            <div class="product-visual">
+              <img src="assets/mac charger.webp" alt="MacBook Charger" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">MacBook Charger</h3>
+            <p class="product-price">GHS 350</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20MacBook%20Charger%20priced%20at%20GHS%20350."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="5">
+            <div class="product-visual">
+              <img src="assets/wireless powerbank.webp" alt="Powerbank 10,000mAh (Wireless &amp; Wired)" width="200"
+                height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">Powerbank 10,000mAh (Wireless &amp; Wired)</h3>
+            <p class="product-price">GHS 300</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20Powerbank%2010,000mAh%20(Wireless%20%26%20Wired)%20priced%20at%20GHS%20300."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="6">
+            <div class="product-visual">
+              <img src="assets/battery pack.jpg" alt="MagSafe Battery Pack" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">MagSafe Battery Pack</h3>
+            <p class="product-price">GHS 170</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20MagSafe%20Battery%20Pack%20priced%20at%20GHS%20170."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div id="category-playstations" class="category-section">
+        <h3 class="category-title">PLAYSTATIONS</h3>
+        <div class="products-grid">
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <img src="assets/ps 4 slim.webp" alt="PlayStation 4 Slim" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">PlayStation 4 Slim</h3>
+            <p class="product-price">Contact for price</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PlayStation%204%20Slim."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="1">
+            <div class="product-visual">
+              <img src="assets/ps4 pro.webp" alt="PlayStation 4 Pro" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">PlayStation 4 Pro</h3>
+            <p class="product-price">Contact for price</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PlayStation%204%20Pro."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="2">
+            <div class="product-visual">
+              <img src="assets/ps5 slim.webp" alt="PlayStation 5 Slim" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">PlayStation 5 Slim</h3>
+            <p class="product-price">GHS 7,000</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PlayStation%205%20Slim%20priced%20at%20GHS%207%2C000."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="3">
+            <div class="product-visual">
+              <img src="assets/standard.webp" alt="PlayStation 5 Standard" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">PlayStation 5 Standard</h3>
+            <p class="product-price">GHS 6,500</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PlayStation%205%20Standard%20priced%20at%20GHS%206%2C500."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="4">
+            <div class="product-visual">
+              <img src="assets/ps5 pro.webp" alt="PlayStation 5 Pro" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">PlayStation 5 Pro</h3>
+            <p class="product-price">GHS 9,000</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PlayStation%205%20Pro%20priced%20at%20GHS%209%2C000."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div id="category-phones" class="category-section">
+        <h3 class="category-title">PHONES</h3>
+        <div class="products-grid">
+          <!-- Placeholder for Phones -->
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <span class="product-badge">NEW ARRIVAL</span>
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&fit=crop&q=80"
+                alt="iPhone 17 Pro Max" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">iPhone 17 Pro Max (physical sim)</h3>
+            <p class="product-price">GHS 18,500 - GHS 21,500</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20iPhone%2017%20Pro%20Max%20(physical%20sim)%20priced%20at%20GHS%2018%2C500%20-%20GHS%2021%2C500."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="1">
+            <div class="product-visual">
+              <span class="product-badge">US SPEC</span>
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&fit=crop&q=80"
+                alt="iPhone 17 Pro Max (Esim)" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">iPhone 17 Pro Max ( Esim)</h3>
+            <p class="product-price">GHS 16,500 - GHS 19,500</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20iPhone%2017%20Pro%20Max%20(%20Esim)%20priced%20at%20GHS%2016%2C500%20-%20GHS%2019%2C500."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="2">
+            <div class="product-visual">
+              <span class="product-badge">BEST SELLER</span>
+              <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&fit=crop&q=80"
+                alt="iPhone 13" width="200" height="200" loading="lazy" />
+            </div>
+            <h3 class="product-name">iPhone 13</h3>
+            <p class="product-price">Contact for price</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20iPhone%2013."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div id="category-controllers" class="category-section">
+        <h3 class="category-title">CONTROLLERS</h3>
+        <div class="products-grid">
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="assets/ps5 control.webp" alt="PS5 DualShock Controller" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">PS5 DualShock Controller</h3>
+            <p class="product-price">GHS 1,050</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PS5%20DualShock%20Controller%20priced%20at%20GHS%201%2C050."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+          <article class="product-card" data-animate data-delay="1">
+            <div class="product-visual">
+              <span class="product-badge">IOS 26 VERIFIED</span>
+              <img src="assets/ps4 controller.webp" alt="PS4 DualShock Controller" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">PS4 DualShock Controller</h3>
+            <p class="product-price">GHS 160</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20PS4%20DualShock%20Controller%20priced%20at%20GHS%20160."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div id="category-videography" class="category-section">
+        <h3 class="category-title">VIDEOGRAPHY / PHOTOGRAPHY</h3>
+        <div class="products-grid">
+          <article class="product-card" data-animate data-delay="0">
+            <div class="product-visual">
+              <span class="product-badge">PROMO</span>
+              <img src="assets/quadrapod.webp" alt="AI Face Tracking Quadrapod" width="200" height="200"
+                loading="lazy" />
+            </div>
+            <h3 class="product-name">AI Face Tracking Quadrapod</h3>
+            <p class="product-price">GHS 280</p>
+            <a href="https://wa.me/233540639091?text=Hi%20Centuryboy!%20I'm%20interested%20in%20the%20AI%20Face%20Tracking%20Quadrapod%20priced%20at%20GHS%20280."
+              class="btn btn-primary product-buy" target="_blank" rel="noopener">Buy Now</a>
+            <button type="button" class="btn btn-secondary product-add-cart">Add to Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-block">
+        <h2 class="contact-heading">Contact</h2>
+        <a href="https://wa.me/233540639091" class="contact-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <span class="icon icon-wa" aria-hidden="true">
+            <img src="assets/whatsapp.png" alt="" width="20" height="20" />
+          </span>
+          <span>0540639091</span>
+        </a>
+        <a href="https://snapchat.com/add/vvs.centuryboy" class="contact-link" target="_blank" rel="noopener"
+          aria-label="Snapchat">
+          <span class="icon icon-snap" aria-hidden="true">
+            <img src="assets/vvs-centuryboy.webp" alt="" width="20" height="20" />
+          </span>
+          <span>@vvs.centuryboy</span>
+        </a>
+        <a href="https://instagram.com/MOPODZZ" class="contact-link" target="_blank" rel="noopener"
+          aria-label="Instagram">
+          <span class="icon icon-ig" aria-hidden="true">
+            <img src="assets/mopodzz.jpg" alt="" width="20" height="20" />
+          </span>
+          <span>MOPODZZ</span>
+        </a>
+        <a href="https://wa.me/233540639091" class="btn btn-primary btn-buy" target="_blank" rel="noopener">BUY NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+
+            <span class="logo-text"><span class="logo-primary">CENTURYBOY'S</span> <span
+                class="logo-secondary">HUB</span></span>
+          </a>
+          <p class="footer-tagline">Premium Authentic Gadgets. Verified Quality. Defining the future of tech retail.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/233540639091" class="social-link" aria-label="WhatsApp">
+              <img src="assets/whatsapp.png" alt="" width="20" height="20" />
+            </a>
+            <a href="https://snapchat.com/add/vvs.centuryboy" class="social-link" aria-label="Snapchat">
+              <img src="assets/vvs-centuryboy.webp" alt="" width="20" height="20" />
+            </a>
+            <a href="https://instagram.com/MOPODZZ" class="social-link" aria-label="Instagram">
+              <img src="assets/mopodzz.jpg" alt="" width="20" height="20" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-heading">EXPLORE</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Inventory</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Centuryboy's Hub. All rights reserved.</p>
+        <p class="footer-credit">Designed for the Future.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
